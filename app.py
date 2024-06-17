@@ -103,7 +103,7 @@ def process_csv(uploaded_file):
         st.error(str(e))
         return None
     
-def plot_data(df):
+def plot_data_original(df):
     st.write("Select columns to plot:")
     columns = st.multiselect("Columns", df.columns)
     if st.button('Plot'):
@@ -148,7 +148,44 @@ def plot_data(df):
             else:
                 st.warning("Unsupported data type.")
 
+def plot_data(df):
+    st.write("Select columns to plot:")
+    columns = st.multiselect("Columns", df.columns)
 
+    if columns:
+        column = st.selectbox("Select a column to plot", columns)
+
+        if df[column].dtype == 'object':
+            # Categorical data
+            st.write("Summary of Categorical Data:")
+            st.write(df[column].value_counts())
+
+            fig, ax = plt.subplots()
+            ax.bar(df[column].value_counts().index, df[column].value_counts().values)
+            ax.set_xlabel('Category')
+            ax.set_ylabel('Count')
+            ax.set_title(f'Categorical Data: {column}')
+            st.pyplot(fig)
+
+        elif df[column].dtype in ['int64', 'float64']:
+            # Numerical data
+            min_val = df[column].min()
+            max_val = df[column].max()
+            start_val, end_val = st.slider("Filter data range", float(min_val), float(max_val), (float(min_val), float(max_val)))
+
+            filtered_df = df[(df[column] >= start_val) & (df[column] <= end_val)]
+
+            fig, ax = plt.subplots()
+            ax.hist(filtered_df[column], bins=50)
+            ax.set_xlabel('Value')
+            ax.set_ylabel('Frequency')
+            ax.set_title(f'Numerical Data: {column}')
+            st.pyplot(fig)
+
+        else:
+            st.warning("Unsupported data type.")
+    else:
+        st.warning("Please select at least one column to plot.")
 
 def main():
     st.title("DocuTalk")
