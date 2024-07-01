@@ -1,5 +1,11 @@
 ## Dependencies
 
+To Create virtual environment:
+
+nalampal@NALAMPAL-M-417J Code % python3 -m venv myenv
+
+nalampal@NALAMPAL-M-417J Code % source myenv/bin/activate
+
 To run this application, you need to have the following dependencies installed:
 
 ```
