@@ -4,6 +4,8 @@
 https://ollama.com/download
 ```
 
+# MAC
+
 ## Dependencies
 
 To Create virtual environment (Optional):
