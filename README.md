@@ -37,7 +37,7 @@ streamlit run app.py
 5. If you have any CSV files uploaded, the application will automatically detect them and display the data in a plot.
 
 
-
+## Resources
 This application uses the following libraries and tools:
 
 - [Streamlit](https://streamlit.io/) for the web application framework.
