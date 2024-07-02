@@ -31,7 +31,7 @@ To run this application, you need to have the following dependencies installed:
 
 ```
 pip install -r requirements.txt
-ollama pull mistral
+ollama pull llama3
 ollama pull nomic-embed-text
 ```
 
