@@ -1,5 +1,9 @@
+## Prerequisites
+++ Python 3.9+
+++ Git
+++ Text Editor
 
-## Download Local Ollama Model 
+## Download Ollama 
 ```
 https://ollama.com/download
 ```
