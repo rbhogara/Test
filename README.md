@@ -1,4 +1,4 @@
-## Prerequisites
+### Prerequisites
 1. Python 3.9+ 
 2. Git 
 3. Text Editor 
