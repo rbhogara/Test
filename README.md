@@ -14,7 +14,7 @@ https://ollama.com/download
 
 
 #### Windows
-<img width="548" alt="Screenshot 2024-07-02 at 8 58 25 PM" src="https://github.com/rbhogara/Test/assets/126253116/d91acd86-f133-4e4b-84ab-f25f0acfeea4"><br>
+[Windows Setup Procedure](windows-procedure.md)
 
 #### Linux
 <img width="580" alt="Screenshot 2024-07-02 at 8 58 14 PM" src="https://github.com/rbhogara/Test/assets/126253116/96f330be-e72d-4406-af80-e4e34caacce7"><br>
