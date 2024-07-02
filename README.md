@@ -1,10 +1,16 @@
+##Download Local Ollama Model - 
+```
+https://ollama.com/download
+```
+
 ## Dependencies
 
-To Create virtual environment:
+To Create virtual environment (Optional):
 
-nalampal@NALAMPAL-M-417J Code % python3 -m venv myenv
-
-nalampal@NALAMPAL-M-417J Code % source myenv/bin/activate
+```
+python3 -m venv talk-to-docs
+source talk-to-docs/bin/activate
+```
 
 To run this application, you need to have the following dependencies installed:
 
