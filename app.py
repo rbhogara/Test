@@ -1,3 +1,11 @@
+'''
+Author(s) : Nikhil(nalampal@cisco.com) and Ravi(rbhogara@cisco.com)
+Usage: Please refer the readme section of - https://github.com/rbhogara/talk-to-docs/
+
+This script provides a Streamlit application for extracting text from PDF, DOCX, and PPTX files, generating embeddings using Ollama, storing it in ChromaDB, and querying the documents using Llama3 LLM.
+
+Note: The purpose of the script is to have a starter code to build our own RAG applications with Local LLMs and Local Vector Database. This covers a basic use case of chatting with different types of documents
+'''
 import streamlit as st
 import io
 import PyPDF2
@@ -12,6 +20,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain.text_splitter import CharacterTextSplitter
 from collections import namedtuple
 
+#Extracts text from a PDF file
 def extract_text_from_pdf(uploaded_file):
     try:
         with io.BytesIO(uploaded_file.read()) as f:
@@ -25,6 +34,7 @@ def extract_text_from_pdf(uploaded_file):
         st.error(str(e))
         return None
 
+#Extracts text from a DOCX file
 def extract_text_from_docx(uploaded_file):
     try:
         with io.BytesIO(uploaded_file.read()) as f:
@@ -38,6 +48,7 @@ def extract_text_from_docx(uploaded_file):
         st.error(str(e))
         return None
 
+#Extracts text from a PPTX file
 def extract_text_from_pptx(uploaded_file):
     try:
         with io.BytesIO(uploaded_file.read()) as f:
@@ -53,6 +64,7 @@ def extract_text_from_pptx(uploaded_file):
         st.error(str(e))
         return None
 
+#Processes the uploaded files to extract text and generate embeddings
 def process_input(uploaded_files):
     try:
         docs_list = []
@@ -69,6 +81,7 @@ def process_input(uploaded_files):
             if text:
                 docs_list.append(text)
 
+        #split data into chunks
         text_splitter = CharacterTextSplitter(
             separator="\n",
             chunk_size=1000,
@@ -77,9 +90,11 @@ def process_input(uploaded_files):
         )
         chunks = text_splitter.split_text(" ".join(docs_list))
 
+        #create Documents from chunks
         Document = namedtuple('Document', ['page_content', 'metadata'])
         documents = [Document(page_content=chunk, metadata={}) for chunk in chunks]
 
+        #Generate embeddings with nomic-embed-text model and store them in a vectorstore
         vectorstore = Chroma.from_documents(
             documents=documents,
             collection_name="rag-chroma",
@@ -92,6 +107,7 @@ def process_input(uploaded_files):
         st.error(str(e))
         return None
 
+#Answers a question based on the context retrieved from the documents
 def answer_question(question, retriever):
     try:
         model_local = Ollama(model="llama3")
@@ -112,6 +128,7 @@ def answer_question(question, retriever):
         st.error(str(e))
         return None
 
+#Main function to run the Streamlit app
 def main():
     st.title("Chat with Documents")
     st.write("Upload files and enter a question to query the documents.")
