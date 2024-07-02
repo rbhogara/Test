@@ -10,7 +10,6 @@ https://ollama.com/download
 
 #### MAC
 <img width="535" alt="Screenshot 2024-07-02 at 8 53 49 PM" src="https://github.com/rbhogara/Test/assets/126253116/9ff5a7d6-d5f3-48ee-8a4c-e385c2651180"><br>
-<img width="396" alt="Screenshot 2024-07-02 at 8 54 42 PM" src="https://github.com/rbhogara/Test/assets/126253116/80934283-68b0-4087-a8e5-eb6c594551e8">
 
 
 #### Windows
