@@ -4,11 +4,11 @@
 https://ollama.com/download
 ```
 
-### MAC
+#### MAC
 
-### Windows
+#### Windows
 
-### Linux
+#### Linux
 
 ## Dependencies
 
