@@ -1,7 +1,7 @@
 ## Prerequisites
-++ Python 3.9+
-++ Git
-++ Text Editor
+> Python 3.9+
+> Git
+> Text Editor
 
 ## Download Ollama 
 ```
