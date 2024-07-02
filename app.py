@@ -130,7 +130,7 @@ def answer_question(question, retriever):
 
 #Main function to run the Streamlit app
 def main():
-    st.title("Chat with Documents")
+    st.title("Talk to Docs")
     st.write("Upload files and enter a question to query the documents.")
 
     uploaded_files = st.file_uploader("Upload files", type=["pdf", "docx", "pptx"], accept_multiple_files=True)
