@@ -29,12 +29,15 @@ source talk-to-docs/bin/activate
 
 To run this application, you need to have the following dependencies installed:
 
+Ollama Dependencies -
 ```
-pip install -r requirements.txt
 ollama pull llama3
 ollama pull nomic-embed-text
 ```
-
+Python Dependencies - 
+```
+pip install -r requirements.txt
+```
 
 ## Usage
 
