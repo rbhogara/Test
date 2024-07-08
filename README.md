@@ -5,20 +5,6 @@
 
 ## Download [Ollama](https://ollama.com/download)
 
-
-#### MAC
-<img width="535" alt="Screenshot 2024-07-02 at 8 53 49 PM" src="https://github.com/rbhogara/Test/assets/126253116/9ff5a7d6-d5f3-48ee-8a4c-e385c2651180"><br>
-
-
-#### Windows
-[Windows Setup Procedure](windows-procedure.md)
-
-#### Linux
-<img width="580" alt="Screenshot 2024-07-02 at 8 58 14 PM" src="https://github.com/rbhogara/Test/assets/126253116/96f330be-e72d-4406-af80-e4e34caacce7"><br>
-```
-curl -fsSL https://ollama.com/install.sh | sh
-```
-
 ## Dependencies
 
 To Create virtual environment (Optional):
