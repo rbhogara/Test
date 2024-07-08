@@ -3,10 +3,8 @@
 2. Git 
 3. Text Editor 
 
-## Download Ollama 
-```
-https://ollama.com/download
-```
+## Download [Ollama](https://ollama.com/download)
+
 
 #### MAC
 <img width="535" alt="Screenshot 2024-07-02 at 8 53 49 PM" src="https://github.com/rbhogara/Test/assets/126253116/9ff5a7d6-d5f3-48ee-8a4c-e385c2651180"><br>
@@ -65,3 +63,7 @@ This application uses the following libraries and tools:
 - [python-pptx](https://python-pptx.readthedocs.io/) for PPTX file processing.
 - [Chroma](https://www.trychroma.com/) for the vector database.
 - [Ollama](https://www.anthropic.com/models) for the language model.
+
+
+## Feedback form
+https://forms.office.com/r/2vyNdMU1eV
