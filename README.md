@@ -53,4 +53,4 @@ This application uses the following libraries and tools:
 
 ## Feedback
 Please fill the feedback.
-QR Code for feedback at Reception
+https://forms.office.com/r/hUHcBjhfHQ
