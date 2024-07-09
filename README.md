@@ -5,6 +5,9 @@
 
 ## Download [Ollama](https://ollama.com/download)
 
+## Download [code](https://github.com/rbhogara/talk-to-docs/archive/refs/heads/main.zip)
+Enter directory of code
+
 ## Dependencies
 
 To Create virtual environment (Optional):
