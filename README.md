@@ -8,12 +8,16 @@
 ## Dependencies
 
 To Create virtual environment (Optional):
-
+On MAC/Linux :
 ```
 python3 -m venv talk-to-docs
 source talk-to-docs/bin/activate
 ```
-
+On Windows :
+```
+python3 -m venv talk-to-docs
+talk-to-docs\Scripts\activate
+```
 To run this application, you need to have the following dependencies installed:
 
 Ollama Dependencies -
