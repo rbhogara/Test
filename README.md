@@ -54,3 +54,7 @@ This application uses the following libraries and tools:
 ## Feedback
 Please fill the feedback.
 https://forms.office.com/r/hUHcBjhfHQ
+
+## Further learning
+
+Now that you are well underway in your journey with Generative AI and LLMs, continue your learning. If you haven't done so already, earn your White Belt, Green Belt and Blue Belt Gen AI certifications on degreed.com. Join the CX Gen AI Community [sharepoint](https://cisco.sharepoint.com/sites/CXGenAI) and [webex](https://eurl.io/#xREVWTMhT) spaces. Participate in the APAC TAC AI Exchange forum ([sharepoint](https://cisco.sharepoint.com/sites/APJCAIconnect) and [webex](https://eurl.io/#OyuyFBHbD)). Last but not the least, since you are already here, try out the other labs available to learn more.
