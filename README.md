@@ -51,5 +51,6 @@ This application uses the following libraries and tools:
 - [Ollama](https://www.anthropic.com/models) for the language model.
 
 
-## Feedback form
-https://forms.office.com/r/2vyNdMU1eV
+## Feedback
+Please fill the feedback to win a goodie.
+QR Code for feedback at Reception
