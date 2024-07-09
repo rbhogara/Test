@@ -29,6 +29,13 @@ Python Dependencies -
 ```
 pip install -r requirements.txt
 ```
+## Local Chatbot
+
+You can use the below command to have a local chat bot
+```
+ollama run llama3
+```
+
 
 ## Usage
 
