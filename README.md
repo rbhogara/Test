@@ -52,5 +52,5 @@ This application uses the following libraries and tools:
 
 
 ## Feedback
-Please fill the feedback to win a goodie.
+Please fill the feedback.
 QR Code for feedback at Reception
